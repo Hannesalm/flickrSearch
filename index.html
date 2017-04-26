@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Flickr Search</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Flickr free search</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <form class="navbar-form navbar-left" method="GET" action="/search" role="search">
+                        <div class="form-group">
+                            <input class="form-control" id="query" type="search" name="query" placeholder="Search flickr..." required>
+                        </div>
+                        <button id="button" type="submit" class="btn btn-default">Search</button>
+                    </form>
+                    <button type="button" class="btn btn-danger navbar-btn" id="reset">Reset</button>
+                    <button type="button" class="btn btn-info navbar-btn" id="album-button" style="display: none">Create Album</button>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+    </head>
+    <body>
+        <div id="images" class="container"></div>
+        <div id="gallery" style="display: none">
+            <div id="bigImage" class="container"></div>
+            <div id="thumbnails" class="container"></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
