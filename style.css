@@ -13,3 +13,12 @@
     padding: 5px;
     border: 1px solid;
 }
+#bigImage img{
+	margin-left: 20%;
+	height: 600px;
+	width: 600px;
+}
+
+#thumbnails {
+	margin-left: 20%;
+}
